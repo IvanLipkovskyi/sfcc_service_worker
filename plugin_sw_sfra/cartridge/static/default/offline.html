@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Maintenance</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .logo {
+      font-size: 48px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #55b6e7;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .logo-icon::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 25px;
+      background-color: #55b6e7;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo-text {
+      font-size: 48px;
+    }
+
+    .logo-text span:first-child {
+      color: white;
+    }
+
+    .logo-text span:last-child {
+      color: #55b6e7;
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .highlight {
+      color: #55b6e7;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <div class="logo-icon"></div>
+    <div class="logo-text"><span>demand</span><span>ware</span><sup>®</sup></div>
+  </div>
+  <div class="message">
+    Demandware.com is <span class="highlight">temporarily unavailable</span> while we undergo
+    <span class="highlight">scheduled maintenance</span>.<br>
+    We’ll be back soon.
+  </div>
+</body>
+</html>

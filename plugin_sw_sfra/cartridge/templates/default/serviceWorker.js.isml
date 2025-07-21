@@ -1,0 +1,11 @@
+<iscontent type="application/javascript" charset="UTF-8" compact="true"/>
+<iscomment>
+    Serves the service-worker.js script from the root of the host.
+
+    This workaround is necessary because static files under /static
+    cannot be mapped directly to arbitrary root-level URLs like /service-worker.js.
+</iscomment>
+
+self.serverPreparedData = ${JSON.stringify(pdict.swConfig)};
+
+<isinclude url="${URLUtils.staticURL('/js/service-worker.js')}"/>
